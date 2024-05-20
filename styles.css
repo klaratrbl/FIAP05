@@ -1,0 +1,132 @@
+body {
+    background-color: #F0F0F0; 
+    color: #141414; 
+    margin-top: 56px; 
+}
+
+.navbar {
+    background-color: #E81B5C; 
+}
+
+.navbar-brand {
+    color: #F0F0F0; 
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+    color: #D9D9D9; 
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #E81B5C;
+}
+
+.card-title a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #141414; 
+    color: #F0F0F0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.switch-container {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.switch {
+    display: none;
+}
+
+.switch-label {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.switch-label::after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #F0F0F0;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: 0.3s;
+}
+
+.switch:checked + .switch-label::after {
+    left: 21px;
+}
+
+.switch:checked + .switch-label {
+    background-color: #E81B5C;
+}
+
+body.dark-mode {
+    background-color: #141414;
+    color: #000000;
+}
+
+body.dark-mode .card {
+    background-color: #D9D9D9;
+    border: none;
+}
+
+body.dark-mode .card-title a {
+    color: #000000;
+}
+
+body.dark-mode .navbar {
+    background-color: #141414;
+}
+
+body.dark-mode footer {
+    background-color: #141414;
+}
+
+body.dark-mode .switch-label {
+    background-color: #141414;
+}
+
+body.dark-mode .switch:checked + .switch-label {
+    background-color: #E81B5C;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #E81B5C;
+    border-color: #E81B5C;
+}
+
+body.dark-mode .btn-primary:hover {
+    background-color: #C2184F;
+    border-color: #C2184F;
+}
+
+.card-img-top {
+    max-width: 200px;
+    height: auto;
+}
+
+.btn-custom {
+    background-color: #E81B5C !important;
+    border-color: #E81B5C !important;
+    color: #FFFFFF !important; 
+    transition: all 2.0s; 
+}
+
+.btn-custom:hover {
+    transform: scale(1.12); 
+}
+
